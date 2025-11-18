@@ -33,7 +33,7 @@ console.log();
     } else if (userData) {
       const employee = userData.find((e) => email == e.email && e.password == password)
       if (employee) {
-        toast.success(loggedInUserData.firstName+" logedin")
+        toast.success("Admin Logined")
         setUser('employee')
         setLoggedInUserData(employee)
         localStorage.setItem('loggedInUser', JSON.stringify({ role: 'employee',data:employee }))
